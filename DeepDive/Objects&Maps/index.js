@@ -22,3 +22,5 @@ function displayMusicPlaces({ music: { traditional, jazz } }) {
 }
 
 displayMusicPlaces(recommendations);
+
+// Challenge: Your First Map
