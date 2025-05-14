@@ -24,3 +24,14 @@ function displayMusicPlaces({ music: { traditional, jazz } }) {
 displayMusicPlaces(recommendations);
 
 // Challenge: Your First Map
+const favouritePlace = {
+    music: "jazz",
+    name: "Paris House"
+};
+
+const favPlaceMap=new Map ([
+    ["music","jazz"],
+    ["name","Paris House"],
+    ["isVisited",true],
+    ["averageBill", 50]
+]);
