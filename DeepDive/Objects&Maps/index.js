@@ -1,21 +1,24 @@
-const color = 'black';
-const hexCode = '#000';
-
-const colors = {
-  'yellow Color': '#ff0',
-  blue: "#f00",
-  orange: "#f60",
-  [color]: hexCode
-};
-
-// colors[color] = hexCode;
-// console.log(colors);
-
-function getColor(key) {
-  return colors[key];
+//Challenge object destructuring
+const recommendations = {
+    pancakes: 'Nowhere Man',
+    riceBowls: 'Pompoko',
+    beer: 'The Craft Beer Co.',
+    coffee: 'Coffee Roasters',
+    small_plates: 'Venetian Plates',
+    music: { 
+        traditional: 'Fiddler\'s Elbow', 
+        jazz: 'The Paris House'
+    }
 }
 
-delete colors['yellow Color']
-console.log(colors)
+const { beer, coffe } = recommendations;
 
-console.log(getColor('orange'));
+const { music: { traditional, jazz } } = recommendations;
+
+console.log(jazz)
+
+function displayMusicPlaces({ music: { traditional, jazz } }) {
+    console.log(`Head to ${traditional} or ${jazz} to listen to great music!`)
+}
+
+displayMusicPlaces(recommendations);
