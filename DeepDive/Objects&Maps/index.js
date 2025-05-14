@@ -35,3 +35,6 @@ const favPlaceMap=new Map ([
     ["isVisited",true],
     ["averageBill", 50]
 ]);
+
+const key = favPlaceMap.get("averageBill");
+console.log(key)
