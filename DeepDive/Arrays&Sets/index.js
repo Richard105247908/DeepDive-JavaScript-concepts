@@ -8,3 +8,5 @@ console.log(favouriteSongs)
 console.log(favouriteSongs[favouriteSongs.length - 1])
 
 favouriteSongs.pop();
+
+console.log(favouriteSongs[favouriteSongs.length - 1])
