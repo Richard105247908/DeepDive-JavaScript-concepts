@@ -21,5 +21,9 @@ const songs = [
     {song: "Thinking Out Loud", timesStreamed: 1.461, wonGrammy: true}
 ]
 
-const result = songs.some(song=>song.wonGrammy)
+// const result = songs.some(song=>song.wonGrammy)
+// console.log(result)
+
+const allMegaHits = songs.every(song=>song.timesStreamed > 1.5)
 console.log(result)
+
