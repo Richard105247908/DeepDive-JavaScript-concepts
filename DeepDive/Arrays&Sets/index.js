@@ -49,3 +49,15 @@ const total= results.reduce((accumulator, carItems)=>{
 },0);
 
 console.log(total)
+
+//better way without needing filter
+
+const totalWeight = cars.reduce((accumulator, car) => {
+    if (car.isElectric) {
+        return accumulator + car.weight;
+    } else {
+        return accumulator;
+    }
+}, 0)
+
+console.log(totalWeight);
