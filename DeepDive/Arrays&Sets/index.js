@@ -37,7 +37,13 @@ const cars = [
   { name: "BMW", isElectric: true, weight: 1350 },  
 ];
 
-const total= cars.reduce((accumulator, carItems)=>{
+const results = cars.filter(electricCar=> 
+  electricCar.isElectric===true
+  );
+  console.log(results)
+
+
+const total= results.reduce((accumulator, carItems)=>{
     return accumulator + carItems.weight
 
 },0);
