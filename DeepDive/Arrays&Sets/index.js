@@ -61,3 +61,23 @@ const totalWeight = cars.reduce((accumulator, car) => {
 }, 0)
 
 console.log(totalWeight);
+
+//challenge: Array destructuring
+const fishDishes = ['Salmon Rillettes', 'Grilled Tuna Provencal', 'Fish and Chips']
+const meatDishes = ['Lasagna', 'Spaghetti', 'Satay Chicken Skewers']
+
+// Modify these four variables first
+let [chefsFishDishes, ...regularFishDishes] = fishDishes;
+
+let [regularMeatDishes ,...chefsMeatDishes] = meatDishes;
+
+// console.log(chefsFishDishes);
+// console.log(regularFishDishes);
+// console.log(regularMeatDishes);
+// console.log(chefsMeatDishes);
+
+// Finally, use the spread operator to create these two arrays as well
+let chefsDishes = [...chefsMeatDishes, chefsFishDishes]
+let regularDishes = [...regularFishDishes, regularMeatDishes];
+console.log(chefsDishes);
+console.log(regularDishes);
