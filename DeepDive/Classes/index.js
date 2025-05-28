@@ -41,7 +41,7 @@ class Film {
         this.genre=genre;
     }
 
-    addGenre(genre){
+    addGenre(genres){
         this.genre=[...this.genre, genres];
     }
 
@@ -52,4 +52,7 @@ class Film {
 }
 
 // Rest of your code here. 
+const film1= new Film(1,"Van helsing","Stephen Sommers",2004);
+film1.addGenre("Horror");
+console.log(film1.getFilmTitle());
 
