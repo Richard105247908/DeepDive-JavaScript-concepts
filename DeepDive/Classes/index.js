@@ -13,5 +13,10 @@ function Book(id, title, author, themes= []) {
 	this.themes=themes;
 }
 
+Book.prototype.addtheme =function(theme){
+	this.themes = [...this.themes,theme]
+	
+}
+
 new Book(1, "lord of the rings", "someguy", ["fantasy","action"])
 new Book(2, "Game of thrones", "some other guy", ["fantasy","action"])
