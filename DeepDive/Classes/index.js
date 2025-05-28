@@ -23,8 +23,11 @@ Book.prototype.addtheme =function(theme){
 	
 }
 
-const Book1 = new Book(1, "lord of the rings", "someguy")
-Book1.addtheme("fantasy","action")
+const Book1 = new Book(1, "lord of the rings", "someguy");
+Book1.addtheme("fantasy","action");
 
-const Book2 = new Book(2, "Game of thrones", "some other guy")
-Book2.addtheme("Magic", "fanstasy")
+const Book2 = new Book(2, "Game of thrones", "some other guy");
+Book2.addtheme("Magic", "fanstasy");
+
+console.log(Book1.title);
+console.log(Book2.title);
