@@ -10,5 +10,5 @@ function Book(id, title, author, themes= []) {
 	this.id=id;
 	this.title=title;
 	this.author=author;
-	this.themes[];
+	this.themes=themes;
 }
