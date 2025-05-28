@@ -33,6 +33,23 @@ console.log(Book2.title);
 
 class Film {
 	//Your code here.
+    constructor(id,title,director,releaseYear, genre=[]){
+        this.id=id;
+        this.title=title;
+        this.director=director;
+        this.releaseYear=releaseYear;
+        this.genre=genre;
+    }
+
+    addGenre(genre){
+        this.genre=[...this.genre, genres];
+    }
+
+    getFilmTitle(){
+        return `Title: ${this.title}`
+    }
+
 }
 
 // Rest of your code here. 
+
