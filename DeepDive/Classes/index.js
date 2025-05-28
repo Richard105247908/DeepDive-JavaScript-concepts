@@ -18,11 +18,6 @@ Book.prototype.addtheme =function(theme){
 	
 }
 
-Book.prototype.addtheme =function(theme){
-	this.themes = [...this.themes,theme]
-	
-}
-
 const Book1 = new Book(1, "lord of the rings", "someguy");
 Book1.addtheme("fantasy","action");
 
