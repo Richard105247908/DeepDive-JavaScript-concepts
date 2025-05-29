@@ -36,3 +36,7 @@ title.append(tagline);
   document.body.addEventListener('click', event => {
     console.log(event.target.textContent);
   });
+
+   document.body.addEventListener('mouseover', event => {
+    console.log(event.target.textContent);
+  });
