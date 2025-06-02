@@ -3,8 +3,8 @@
 // It should return a message with a number. 
 
 // Write your code below:
-function splitBill(x,y){
-    return result =x/y;
+function splitBill(amount,people){
+    return `Each person need to pay ${amount/people}`;
     
 }
 
