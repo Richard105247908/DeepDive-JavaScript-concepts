@@ -54,11 +54,10 @@ function countdown(startingNumber, step) {
     return countFromNum;
   }
 }
-
-const countdown=(startingNumber,step)=>{
+//arrow function
+const countdown =(startingNumber,step)=>{
     let countFromNum=startingNumber + step;
     return decrease=>{
         countFromNum -= step;
-        return countFromNum;
     }
 }
