@@ -43,7 +43,22 @@ console.log(countingDown());
 function splitBill(amount, numPeople) {
     return `Each person needs to pay ${amount / numPeople}`
 }
+//Arrow function
+const splitBill = (amount, numPeople) =>
+    `Each person needs to pay ${amount / numPeople}`;
 
-const splitBill = (amount, numPeople =>{
-    `Each person needs to pay ${amount / numPeople}`
-})
+function countdown(startingNumber, step) {
+  let countFromNum = startingNumber + step;
+  return function decrease() {
+    countFromNum -= step;
+    return countFromNum;
+  }
+}
+
+const countdown=(startingNumber,step)=>{
+    let countFromNum=startingNumber + step;
+    return decrease=>{
+        countFromNum -= step;
+        return countFromNum;
+    }
+}
