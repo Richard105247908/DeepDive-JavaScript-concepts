@@ -57,7 +57,7 @@ function countdown(startingNumber, step) {
 //arrow function
 const countdown =(startingNumber,step)=>{
     let countFromNum=startingNumber + step;
-    return decrease=>{
+    return ()=>{
         countFromNum -= step;
     }
 }
