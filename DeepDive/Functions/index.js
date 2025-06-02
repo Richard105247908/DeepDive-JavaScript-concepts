@@ -33,3 +33,17 @@ const countingDown = countdown(8);
 console.log(countingDown());
 console.log(countingDown());
 console.log(countingDown());
+
+
+// Challenge: Rewrite your first function from a previous challnge to be an arrow function. 
+// Stretch goal: Rewrite counting down closure in arrow function form. 
+
+
+// Challenge start 
+function splitBill(amount, numPeople) {
+    return `Each person needs to pay ${amount / numPeople}`
+}
+
+const splitBill = (amount, numPeople =>{
+    `Each person needs to pay ${amount / numPeople}`
+})
